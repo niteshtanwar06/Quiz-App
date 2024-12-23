@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="quiz-container">
+    <div id="app">
+        <!-- Home Page -->
+        <div id="home-page" class="page active">
+            <img src="https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/gallery/609cb928b22a1_teafloor.png"alt="Testbook">
+            <div class="user-details-section">
+                <h1>Hello User!</h1>
+                <h4>Enter your name to continue the Quiz.</h4>
+                <label for="name"></label>
+                <input type="text" id="name" placeholder="Enter your name">
+                <button id="start-quiz">Enter</button>
+                <p>You'll have 30 Secons to answer each questions</p>
+                <hr>
+                <h1>Select Category</h1>
+            </div>
+            <div class="category-section">
+              <button class="category-btn" data-category="HTML">HTML</button>
+              <button class="category-btn" data-category="CSS">CSS</button>
+              <button class="category-btn" data-category="Javascript">Javascript</button>
+              <button class="category-btn" data-category="React">React</button>
+              
+            </div>
+        </div>
+
+        <!-- Quiz Page -->
+        <div id="quiz-page" class="page">
+            <h1>Quiz App</h1>
+              <div class="quiz-header">
+                <span id="time" class="timer">Time: 00</span>
+                <h2 id="category-title">Quiz</h2>
+                <span id="score">Marks: 1</span>
+              </div>
+              
+              <div id="question-container">
+                <div class="question-number-box">
+                  <span id="question-number"></span>
+                </div>
+                <h3 id="question">Question text will appear here</h3>
+                </div>
+                <div id="options">
+                  <!-- Options will be dynamically generated -->
+                </div>
+              <button id="next-question" class="btn">Next Question</button>
+          </div>
+          
+        <!-- Result Page -->
+        <div id="result-page" class="page">
+            <h1>Quiz Results</h1>
+            <p><span id="participant-name"></span> your result is:</p>
+            <p id="time-taken">Total Time Taken:</p>
+            <p>Total Questions: <span id="total-questions"></span></p>
+            <p>Attempted: <span id="attempted"></span></p>
+            <p>Correct Answers: <span id="correct-answers"></span></p>
+            <p>Wrong Answers: <span id="wrong-answers"></span></p>
+            <p>Score: <span id="score-percentage"></span>%</p>
+            <button id="start-again">Start Again</button>
+            <button id="go-home">Go to Home</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</div>
+</body>
+
+</html>
