@@ -245,8 +245,8 @@ document.addEventListener('DOMContentLoaded', () => {
     button.addEventListener('click', () => {
       selectedCategory = button.getAttribute('data-category');
       categoryButtons.forEach((btn) => {
-        btn.style.backgroundColor = btn === button ? "#007bff" : "#f0f8ff";
-        btn.style.color = btn === button ? "#fff" : "#007bff";
+        btn.style.backgroundColor = btn === button ? "#04d8e7" : "#f0f8ff";
+        btn.style.color = btn === button ? "#000000" : "#04d8e7";
       });
     });
   });
