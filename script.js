@@ -372,9 +372,11 @@ document.addEventListener('DOMContentLoaded', () => {
     currentQuestionIndex = 0;
     attempted = 0;
     resetTimer();
-    homePage.classList.add('active');
-    quizPage.classList.remove('active');
+    homePage.classList.remove('active');
+    quizPage.classList.add('active');
     resultPage.classList.remove('active');
+    
+    loadQuestion();
   }
 
   // Event Listeners
