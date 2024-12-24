@@ -378,10 +378,19 @@ document.addEventListener('DOMContentLoaded', () => {
     
     loadQuestion();
   }
+  function resettQuiz() {
+    score = 0;
+    currentQuestionIndex = 0;
+    attempted = 0;
+    resetTimer();
+    homePage.classList.add('active');
+    quizPage.classList.remove('active');
+    resultPage.classList.remove('active');
+  }
 
   // Event Listeners
   startAgainButton.addEventListener('click', resetQuiz);
-  goHomeButton.addEventListener('click', resetQuiz);
+  goHomeButton.addEventListener('click', resettQuiz);
 });
 
 
